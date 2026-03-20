@@ -11,7 +11,6 @@
     * 70% de probabilidad de que los números menos frecuentes (2, 12, 3, 11) aparezcan en el **centro**.
 * **Sesgo del Desierto**: Los vértices que tocan el desierto tienen un **42.5%** de probabilidad de ser elegidos, fomentando retos estratégicos.
 * **Garantía de Recursos**: Cada jugador inicia siempre con acceso a por lo menos **dos materiales** distintos.
-* **Diseño Responsivo**: Optimizado para visualizarse en **MacBook**, tablets y dispositivos móviles (como el POCO F6).
 
 ## 🛠️ Stack Tecnológico
 
