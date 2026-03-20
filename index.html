@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catan Estratégico - Carlos Daniel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <h1>Catan: Configuración Pro</h1>
+        <div class="setup-panel">
+            <label for="num-players">Número de jugadores:</label>
+            <select id="num-players" onchange="actualizarInputsNombres()">
+                <option value="3">3 Jugadores</option>
+                <option value="4" selected>4 Jugadores</option>
+            </select>
+            <div id="player-names-container"></div>
+            <button onclick="iniciarPartida()">Generar Partida</button>
+        </div>
+        <div id="game-container" style="display:none;">
+            <div id="inventory-container"></div>
+            <div class="legend">
+                <div class="legend-item"><span style="color: #228b22;">●</span> Madera</div>
+                <div class="legend-item"><span style="color: #ffd700;">●</span> Trigo</div>
+                <div class="legend-item"><span style="color: #7cfc00;">●</span> Lana</div>
+                <div class="legend-item"><span style="color: #b22222;">●</span> Ladrillo</div>
+                <div class="legend-item"><span style="color: #808080;">●</span> Mineral</div>
+            </div>
+            <div class="svg-responsive-container">
+                <svg id="catan-board" viewBox="0 0 600 550" preserveAspectRatio="xMidYMid meet"></svg>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
